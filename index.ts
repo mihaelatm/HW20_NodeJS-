@@ -31,3 +31,22 @@ animal.sound();
 
 const dog = new Dog("Rex", "Dog", "German Shepherd");
 dog.sound();
+
+// Task 2
+
+class Library {
+  static totalBooks: number = 0;
+
+  constructor() {
+    Library.totalBooks++;
+    console.log(
+      `Book added. Total books in the library: ${Library.totalBooks}`
+    );
+  }
+}
+
+const book1 = new Library();
+const book2 = new Library();
+const book3 = new Library();
+
+console.log(Library.totalBooks);
