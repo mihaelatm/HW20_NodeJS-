@@ -50,3 +50,29 @@ const book2 = new Library();
 const book3 = new Library();
 
 console.log(Library.totalBooks);
+
+// Task 3
+
+class Vehicle {
+  make: string;
+  model: string;
+
+  constructor(make: string, model: string) {
+    this.make = make;
+    this.model = model;
+  }
+}
+
+class Motorcycle extends Vehicle {
+  type: string;
+
+  constructor(make: string, model: string, type: string) {
+    super(make, model);
+    this.type = type;
+  }
+}
+
+const motorcycle = new Motorcycle("Yamaha", "MT-07", "Sport");
+console.log(
+  `Motorcycle - Make: ${motorcycle.make}, Model: ${motorcycle.model}, Type: ${motorcycle.type}`
+);
